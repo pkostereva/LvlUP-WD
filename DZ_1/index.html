@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HR-form</title>
+</head>
+<body>
+    <main>
+        <h1>Вакансия: Junior Frontend Developer</h1>
+        <section class="first">
+            <figure>
+                <img src="https://memepedia.ru/wp-content/uploads/2016/03/large_p19d7nh1hm1i37tnuim11ebqo5c1.jpg">
+            </figure>
+            <div>
+                <div class="block">
+                    <div class="questions">
+                        Имя:
+                    </div>
+                    <div class="answers">
+                        Полина Костерева
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="questions">
+                        Github:
+                    </div>
+                    <div class="answers">
+                        <a href="https://github.com/pkostereva/LvlUP-WD">/pkostereva/LvlUP-WD</a>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="questions">
+                        Опыт работы:
+                    </div>
+                    <div class="answers">
+                        ОАО "Ленметрогипротранс", 2016-2019 гг.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div><h2>Дата собеседования:</h2></div>
+            <div><input type="date" name="calendar"><input type="submit" value="Отправить"></span></div>
+        </section>
+        <section>
+            <h2>Уровень английского:</h2>
+            <label><input type="radio" name="level-eng" value="bad"> Плохо</label>
+            <label><input type="radio" name="level-eng" value="medium"> Средне</label>
+            <label><input type="radio" name="level-eng" value="good"> Хорошо</label>
+            <label><input type="radio" name="level-eng" value="perfect"> Превосходно</label>
+        </section>
+        <section>
+            <h2>Ключевые навыки:</h2>
+            <ul id='skillSet'>
+                <li>HTML</li>
+                <li>CSS/LESS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+            <input type="text" name="skills" id='skillName'>
+            <button id='addSkill'>Добавить в список</button>
+        </section>
+        <section>
+            <div><h2>Коммуникабельность:</h2></div>
+            <div>
+                <select name="sociability">
+                    <option value="-2">Хиккан</option>
+                    <option value="-1">Сыч</option>
+                    <option value="0">Normie</option>
+                    <option value="1">Социо</option>
+                </select>
+            </div>
+        </section>
+        <section>
+            <div><h2>Желаемая з/п в рублях:</h2></div>
+            <div><input type="number"></div>
+        </section>
+        <section>
+            <h2>Подходит по критериям:</h2>
+            <label><input type="checkbox" name="eng">Знание английского</label>
+            <label><input type="checkbox" name="salary">Оклад</label>
+            <label><input type="checkbox" name="skills">Навыки</label>
+            <label><input type="checkbox" name="person">Сразу видно свой человек</label>
+        </section>
+        <section>
+            <h2>Образование, курсы и т.п.</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Сроки обучения</th>
+                        <th>Наименование учебного заведения</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>09.2018-01.2019</td>
+                        <td class="three">EpicSkills, Основы программирования на Python</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>09.2016-01.2019</td>
+                        <td class="three">Университет ИТМО, Гуманитарный факультет</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>09.2012-06.2018</td>
+                        <td class="three">Университет ИТМО, Инженерно-Физический факультет</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>
