@@ -1,49 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <link href="style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HR-form</title>
 </head>
 <body>
-    <main>
+    <form>
         <h1>Вакансия: Junior Frontend Developer</h1>
-        <section class="first">
+        <section>
             <figure>
                 <img src="https://memepedia.ru/wp-content/uploads/2016/03/large_p19d7nh1hm1i37tnuim11ebqo5c1.jpg">
             </figure>
-            <div>
-                <div class="block">
-                    <div class="questions">
-                        Имя:
-                    </div>
-                    <div class="answers">
-                        Полина Костерева
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="questions">
-                        Github:
-                    </div>
-                    <div class="answers">
-                        <a href="https://github.com/pkostereva/LvlUP-WD">/pkostereva/LvlUP-WD</a>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="questions">
-                        Опыт работы:
-                    </div>
-                    <div class="answers">
-                        ОАО "Ленметрогипротранс", 2016-2019 гг.
-                    </div>
-                </div>
+            <div class="first">
+                <span class="question">Имя:</span><span>Полина Костерева</span><br>
+                <span class="question">Github:</span><a href="https://github.com/pkostereva/LvlUP-WD">pkostereva/LvlUP-WD</a><br>
+                <span class="question">Опыт работы:</span><span>ОАО "Ленметрогипротранс", 2016-2019 гг.</span>
             </div>
+            <div class="clear"></div>
         </section>
         <section>
-            <div><h2>Дата собеседования:</h2></div>
-            <div><input type="date" name="calendar"><input type="submit" value="Отправить"></span></div>
+            <h2>Дата собеседования:</h2>
+            <div><input type="date" name="calendar"></div>
         </section>
         <section>
             <h2>Уровень английского:</h2>
@@ -114,7 +94,9 @@
                 </tbody>
             </table>
         </section>
-    </main>
+    </form>
+    <button type="submit">Отправить</button>
+    <button type="reset">Очистить</button>
     <script src="/script.js"></script>
 </body>
 </html>
