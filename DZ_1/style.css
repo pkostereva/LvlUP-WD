@@ -54,7 +54,7 @@ input, table, select {
 
 table {
     table-layout: fixed;
-    width: 35%;
+    width: 80%;
     border-collapse: collapse;
     border: 1px solid black;
     background-color: white;
@@ -83,4 +83,24 @@ tbody td {
 
 .three {
     text-align: left;
+}
+
+form {
+    width: 750px;
+}
+
+button {
+    color: #777777; 
+    background:#ffffff;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear; 
+}
+
+button:hover {
+    color: #fff;
+    background: #333;
+    transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear; 
 }
