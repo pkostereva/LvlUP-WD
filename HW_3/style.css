@@ -82,7 +82,7 @@ article {
     border-left: 1px dotted rgb(141, 141, 141);
     color: rgb(204, 204, 204);
     padding: 10px;
-    width: 650px;
+    width: 100%;
     flex-grow: 0;
 }
 
