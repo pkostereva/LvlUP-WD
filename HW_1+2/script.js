@@ -1,7 +1,7 @@
-function name() {
-    let val = document.getElementById('skillName').value
+function name(id, id2) {
+    let val = document.getElementById(id).value
     if (val.length != 0) {
-        let x = document.getElementById('skillSet')
+        let x = document.getElementById(id2)
         let nd = document.createElement('li')
         let text = document.createTextNode(val)
         nd.appendChild(text)
@@ -12,4 +12,4 @@ function name() {
 }
 
 
-document.getElementById('addSkill').addEventListener('click', name)
+document.getElementById('addSkill').addEventListener('click', name('skillName','skillSet'))
