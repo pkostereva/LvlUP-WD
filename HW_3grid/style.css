@@ -10,6 +10,8 @@ body {
 .discussion-container {
   width: 800px;
   height: 600px;
+  display: grid;
+  grid-template-rows: 70px 530px;
 }
 
 header {
@@ -19,6 +21,8 @@ header {
   height: 70px;
   width: inherit;
   border-bottom: 2px solid black;
+  grid-row-start: 1;
+  grid-row-end: 2;
   display: flex;
   justify-content: space-between;
 }
@@ -42,22 +46,26 @@ span {
 
 main {
   overflow: auto;
-  max-height: 530px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: grid;
+  grid-template-rows: auto;
 }
 
 article {
   background-color: rgb(30, 30, 30);
   display: grid;
-  grid-template-columns: 150px 650px;
+  grid-template-columns: 150px 1fr;
 }
 
 .message-info {
   align-items: center;
   flex-shrink: 0;
   padding: 5px 10px;
+  display: flex;
   grid-column-start: 1;
   grid-column-end: 2;
-  display: flex;
+
 }
 
 .circle {
@@ -83,7 +91,6 @@ article {
   border-left: 1px dotted rgb(141, 141, 141);
   color: rgb(204, 204, 204);
   padding: 10px;
-  width: 100%;
   flex-grow: 0;
   grid-column-start: 2;
   grid-column-end: 3;

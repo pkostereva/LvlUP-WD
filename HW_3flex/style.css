@@ -10,6 +10,8 @@ body {
 .discussion-container {
     width: 800px;
     height: 600px;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -21,6 +23,7 @@ header {
     border-bottom: 2px solid black;
     display: flex;
     justify-content: space-between;
+    flex-shrink: 0;
 }
 
 .button {
@@ -43,8 +46,8 @@ span {
 main {
     overflow: auto;
     display: flex;
-    flex-flow: row wrap;
-    max-height: 530px;
+    flex-flow: wrap;
+    flex-grow: 0;
 }
 
 article {
