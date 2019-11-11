@@ -45,9 +45,6 @@ span {
 main {
   overflow: auto;
   display: grid;
-}
-
-article {
   background-color: rgb(30, 30, 30);
   display: grid;
   grid-template-columns: 150px 1fr;
