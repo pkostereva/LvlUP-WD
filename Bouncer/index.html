@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bouncer</title>
-    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="styles/site.css">
 </head>
 <body>
-    <header>
+    <header class='column-container'>
         <div class="top-menu">
             <div class="container">
                 <div class="left-controls">
@@ -31,7 +31,39 @@
                 </div>
             </div>
         </div>
-        <div class="logo-and-nav-container"></div>
+        <div class="logo-and-nav-container column-container">
+            <img src="./img/logo.svg" alt="logo">
+            <nav class='flex-container'>
+                <a href="#" class="nav-link active">Home</a>
+                <a href="#" class="nav-link">iPhone</a>
+                <a href="#" class="nav-link">iPad</a>
+                <a href="#" class="nav-link">Store</a>
+                <a href="#" class="nav-link">MacBook</a>
+                <a href="#" class="nav-link">Accessories</a>
+            </nav>
+        </div>
     </header>
+    <section class="carousel-section">
+        <div class="container flex-container">
+            <div class="slide-description">
+                <div class="slide-title">iPhone X</div>
+                <div class="slide-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione molestias cumque nemo at sit aliquid eum asperiores vitae, quasi cupiditate, expedita dolorem in corporis! Autem repudiandae eaque eius unde suscipit.</div>
+                <a href="#" class="slide-link">MORE</a>
+            </div>
+            <img src="./img/Mask Group 1.svg" alt="" srcset="">
+        </div>
+    </section>
+    <section class="top-gadgets-section">
+        <div class="container flex-container">
+            <a href="#" class="gadget-card">
+                <div class="card-title">iPhone X</div>
+                <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium optio architecto. Sequi vel sapiente laudantium ab voluptates ullam, hic id assumenda quasi fuga voluptate tenetur totam recusandae, molestias repellendus?</div>
+                <div class="price">$399</div>
+                <img class="card-image" src="./img/pic_small.svg">
+            </a>
+            <a class="gadget-card"></a>
+            <a class="gadget-card"></a>
+        </div>
+    </section>
 </body>
 </html>
