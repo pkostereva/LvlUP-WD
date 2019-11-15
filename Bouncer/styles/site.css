@@ -42,7 +42,7 @@ body {
   font-weight: bold;
 }
 
-.font-semibold, .nav-link {
+.font-semibold, .title-h2, .mac-card .good-name, .nav-link {
   font-weight: 600;
 }
 
@@ -63,6 +63,197 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.title-h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  word-spacing: 25%;
+  text-align: center;
+  margin: 0;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Semibold.eot");
+  src: local("Proxima Nova Semibold"), local("ProximaNova-Semibold"), url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: local("Proxima Nova Regular"), local("ProximaNova-Regular"), url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: local("Proxima Nova Bold"), local("ProximaNova-Bold"), url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Proxima Nova Rg';
+  margin: 0;
+  color: #26262A;
+}
+
+.font-bold, .carousel-section .slide-title, .carousel-section .slide-link, .gadget-card .card-title {
+  font-weight: bold;
+}
+
+.font-semibold, .title-h2, .mac-card .good-name, .nav-link {
+  font-weight: 600;
+}
+
+.flex-container, .column-container, .flex-vertical-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.column-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-vertical-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title-h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  word-spacing: 25%;
+  text-align: center;
+  margin: 0;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.best-seller {
+  margin-top: 98px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.best-seller .menu-sellers {
+  width: 482px;
+  line-height: 25px;
+  margin-top: 32px;
+  margin-bottom: 26px;
+}
+
+.best-seller .menu-sellers .sellers {
+  text-transform: none;
+}
+
+.best-seller .menu-sellers .sellers.active, .best-seller .menu-sellers .sellers:hover {
+  border-bottom: 3px solid #33A0FF;
+}
+
+.card-grid {
+  grid-gap: 30px;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.mac-card-link {
+  text-decoration: none;
+  color: #26262A;
+}
+
+.mac-card {
+  width: 270px;
+  height: 349px;
+  border: 3px solid #F6F7F8;
+  border-radius: 4px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mac-card .mac-image {
+  margin-top: 30px;
+}
+
+.mac-card hr {
+  color: #F6F7F8;
+  width: 230px;
+  size: 1px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.mac-card .good-name {
+  text-align: center;
+  margin-top: 19px;
+  font-size: 14px;
+}
+
+.mac-card .star-rate {
+  margin-top: 30px;
+  width: 73px;
+}
+
+.mac-card .star {
+  width: 10px;
+  height: 10px;
+}
+
+.mac-card .mac-price {
+  margin-bottom: 31px;
+  font-size: 16px;
+}
+
+.mac-card .new-price {
+  color: #FF4858;
+}
+
+.mac-card .old-price {
+  color: #C1C8CE;
+  text-decoration: line-through;
 }
 
 header {
@@ -198,12 +389,12 @@ nav {
 .gadget-card {
   width: 390px;
   height: 280px;
-  background-color: #f6f7f8;
+  background-color: #F6F7F8;
   color: #26262A;
   text-decoration: none;
-  padding-top: 36px;
-  padding-left: 30px;
   position: relative;
+  padding-top: 44px;
+  padding-left: 30px;
 }
 
 .gadget-card:first-child {
@@ -215,37 +406,63 @@ nav {
   width: 220px;
 }
 
+.gadget-card:first-child .card-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 .gadget-card:first-child .price {
-  font-size: 24px;
   opacity: .75;
 }
 
 .gadget-card:last-child {
-  background-color: #c1c8ce;
+  background-color: #C1C8CE;
 }
 
 .gadget-card:last-child .card-text {
   width: 160px;
 }
 
+.gadget-card:last-child .card-image {
+  position: absolute;
+  right: -26px;
+  bottom: 20px;
+}
+
+.gadget-card:last-child .price {
+  opacity: .75;
+}
+
 .gadget-card .card-title {
   font-size: 24px;
 }
 
-.gadget-card .card-text {
-  line-height: 20px;
-  font-size: 12px;
-  margin: 20px 0px;
-}
-
-.gadget-card .price {
-  font-size: 24px;
-  opacity: .75;
+.gadget-card .card-title.second {
+  padding-top: 180px;
 }
 
 .gadget-card .card-image {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 6px;
+  bottom: 10px;
+}
+
+.gadget-card .card-text {
+  font-size: 12px;
+  line-height: 20px;
+  margin: 20px 0;
+}
+
+.gadget-card .price {
+  font-size: 24px;
+}
+
+.gadget-card .flex-container, .gadget-card .column-container, .gadget-card .flex-vertical-center {
+  padding-top: 180px;
+  padding-right: 32px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=site.css.map */

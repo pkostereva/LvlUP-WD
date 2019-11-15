@@ -42,7 +42,7 @@ body {
   font-weight: bold;
 }
 
-.font-semibold {
+.font-semibold, .title-h2 {
   font-weight: 600;
 }
 
@@ -60,6 +60,23 @@ body {
 }
 
 .flex-vertical-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title-h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  word-spacing: 25%;
+  text-align: center;
+  margin: 0;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

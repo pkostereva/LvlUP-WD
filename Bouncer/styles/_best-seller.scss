@@ -1,0 +1,87 @@
+@import '_base';
+
+.best-seller {
+    margin-top: 98px;
+    align-items: center;
+    justify-content: space-between;
+
+    .menu-sellers {
+        width: 482px;
+        line-height: 25px;
+        margin-top: 32px;
+        margin-bottom: 26px;
+
+        .sellers {
+            text-transform: none;
+        
+            &.active, 
+            &:hover {
+                border-bottom: 3px solid $active-color;
+            }
+        }
+    }
+}
+
+.card-grid {
+    grid-gap: 30px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.mac-card-link {
+    text-decoration: none;
+    color: $primary-color;
+}
+
+.mac-card {
+    width: 270px;
+    height: 349px;
+    border: 3px solid #F6F7F8;
+    border-radius: 4px;
+    justify-content: center;
+
+    .mac-image {
+        margin-top: 30px;
+    }
+
+    hr {
+        color: #F6F7F8;
+        width: 230px;
+        size: 1px;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    .good-name {
+        @extend .font-semibold;
+        text-align: center;
+        margin-top: 19px;
+        font-size: 14px;
+    }
+
+    .star-rate {
+        margin-top: 30px;
+        width: 73px;
+        // height: 10px;
+    }
+
+    .star {
+        width: 10px;
+        height: 10px;
+    }
+
+    .mac-price {
+        margin-bottom: 31px;
+        font-size: 16px;
+    }
+
+    .new-price {
+        color: #FF4858;
+    }
+
+    .old-price {
+        color: #C1C8CE;
+        text-decoration: line-through;
+    }
+}
+
