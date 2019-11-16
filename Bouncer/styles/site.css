@@ -42,7 +42,7 @@ body {
   font-weight: bold;
 }
 
-.font-semibold, .title-h2, .mac-card .good-name, .nav-link {
+.font-semibold, .title-h2, .nav-link {
   font-weight: 600;
 }
 
@@ -126,7 +126,7 @@ body {
   font-weight: bold;
 }
 
-.font-semibold, .title-h2, .mac-card .good-name, .nav-link {
+.font-semibold, .title-h2, .nav-link {
   font-weight: 600;
 }
 
@@ -199,61 +199,25 @@ body {
       grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.mac-card-link {
-  text-decoration: none;
-  color: #26262A;
-}
-
-.mac-card {
+.good-card {
   width: 270px;
   height: 349px;
-  border: 3px solid #F6F7F8;
+  text-decoration: none;
+  color: #26262A;
+  border: 3px solid #f6f7f8;
   border-radius: 4px;
+}
+
+.card-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.mac-card .mac-image {
-  margin-top: 30px;
-}
-
-.mac-card hr {
-  color: #F6F7F8;
+.card-container .grey-line {
   width: 230px;
-  size: 1px;
-  margin-top: 30px;
-  margin-bottom: 0;
-}
-
-.mac-card .good-name {
-  text-align: center;
-  margin-top: 19px;
-  font-size: 14px;
-}
-
-.mac-card .star-rate {
-  margin-top: 30px;
-  width: 73px;
-}
-
-.mac-card .star {
-  width: 10px;
-  height: 10px;
-}
-
-.mac-card .mac-price {
-  margin-bottom: 31px;
-  font-size: 16px;
-}
-
-.mac-card .new-price {
-  color: #FF4858;
-}
-
-.mac-card .old-price {
-  color: #C1C8CE;
-  text-decoration: line-through;
+  height: 1px;
+  color: #f6f7f8;
 }
 
 header {
