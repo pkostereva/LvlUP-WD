@@ -1,20 +1,16 @@
 @import '_base';
-
 .best-seller {
     margin-top: 98px;
     align-items: center;
     justify-content: space-between;
-
     .menu-sellers {
         width: 482px;
         line-height: 25px;
         margin-top: 32px;
         margin-bottom: 26px;
-
         .sellers {
             text-transform: none;
-        
-            &.active, 
+            &.active,
             &:hover {
                 border-bottom: 3px solid $active-color;
             }
@@ -26,6 +22,7 @@
     grid-gap: 30px;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .good-card {
@@ -33,17 +30,33 @@
     height: 349px;
     text-decoration: none;
     color: $primary-color;
-    border: 3px solid #f6f7f8;
-    border-radius: 4px;
 }
 
 .card-container {
-    justify-content: center;
-
+    align-items: center;
+    height: 100%;
+    border: 3px solid #f6f7f8;
+    border-radius: 4px;
+    .good-image {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
     .grey-line {
         width: 230px;
-        height: 1px;
+        size: 1px;
+        border-bottom: none;
+        margin: 0;
         color: #f6f7f8;
     }
+    .good-name {
+        margin-top: 19px;
+        margin-bottom: 30px;
+    }
+    .good-rate {
+        margin-bottom: 15px;
+    }
+    .price-container {
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
 }
-
