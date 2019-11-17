@@ -1,62 +1,138 @@
-@import '_base';
-.best-seller {
-    margin-top: 98px;
-    align-items: center;
-    justify-content: space-between;
-    .menu-sellers {
-        width: 482px;
-        line-height: 25px;
-        margin-top: 32px;
-        margin-bottom: 26px;
-        .sellers {
-            text-transform: none;
-            &.active,
-            &:hover {
-                border-bottom: 3px solid $active-color;
+    @import '_base';
+    .best-seller {
+        margin-top: 98px;
+        margin-bottom: 42px;
+        align-items: center;
+        justify-content: space-between;
+        .menu-sellers {
+            width: 482px;
+            line-height: 25px;
+            margin-top: 32px;
+            margin-bottom: 26px;
+            .sellers {
+                text-transform: none;
+                &.active,
+                &:hover {
+                    border-bottom: 3px solid $active-color;
+                }
             }
         }
     }
-}
-
-.card-grid {
-    grid-gap: 30px;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.good-card {
-    width: 270px;
-    height: 349px;
-    text-decoration: none;
-    color: $primary-color;
-}
-
-.card-container {
-    align-items: center;
-    height: 100%;
-    border: 3px solid #f6f7f8;
-    border-radius: 4px;
-    .good-image {
-        margin-top: 30px;
-        margin-bottom: 30px;
+    
+    .card-grid {
+        grid-gap: 30px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
-    .grey-line {
-        width: 230px;
-        size: 1px;
-        border-bottom: none;
-        margin: 0;
-        color: #f6f7f8;
+    
+    .good-card {
+        width: 270px;
+        height: 349px;
+        text-decoration: none;
+        color: $primary-color;
+        position: relative;
     }
-    .good-name {
-        margin-top: 19px;
-        margin-bottom: 30px;
+    
+    .hot-good {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: #FF4858;
+        height: 20px;
+        width: 40px;
+        border-radius: 2px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 12px;
+        text-align: center;
+        line-height: 20px;
     }
-    .good-rate {
-        margin-bottom: 15px;
+    
+    .card-container {
+        align-items: center;
+        height: 100%;
+        border: 3px solid #f6f7f8;
+        border-radius: 4px;
+        .good-image {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .grey-line {
+            width: 230px;
+            size: 1px;
+            border-bottom: none;
+            margin: 0;
+            color: #f6f7f8;
+        }
+        .good-name {
+            margin-top: 19px;
+            margin-bottom: 30px;
+        }
+        .good-rate {
+            width: 73px;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .price-container {
+            margin-bottom: 30px;
+            font-size: 16px;
+            .new-price {
+                color: #FF4858;
+            }
+            .old-price {
+                color: #C1C8CE;
+                text-decoration: line-through;
+            }
+        }
     }
-    .price-container {
-        margin-bottom: 30px;
-        font-size: 16px;
+    
+    .good-image-container {
+        position: relative;
     }
-}
+    
+    .good-controls {
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 27px;
+        width: 236px;
+        height: 153px;
+        background-color: white;
+        opacity: 85%;
+        z-index: -1;
+        button {
+            height: 46px;
+            width: 46px;
+            border-radius: 50%;
+            border: 2px solid #33A0FF;
+            img {
+                text-align: center;
+            }
+        }
+        .like {
+            margin-right: 10px;
+        }
+    }
+    
+    .good-image-container:hover {
+        .good-controls {
+            z-index: 0;
+        }
+    }
+    
+    .button-load-more {
+        margin-top: 92px;
+        text-transform: uppercase;
+        @extend .font-bold;
+        font-size: 14px;
+        color: $primary-color;
+        border: none;
+        height: 23px;
+        &.active,
+        &:hover {
+            border: none;
+            border-bottom: 3px solid $active-color;
+            color: $active-color;
+        }
+    }
