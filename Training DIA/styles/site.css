@@ -1,0 +1,116 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Muli';
+  margin: 0;
+  color: #253757;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-900 {
+  font-weight: 900;
+}
+
+.font-800 {
+  font-weight: 800;
+}
+
+.flex-container, .column-container, .flex-vertical-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.column-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-vertical-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  font-size: 32px;
+}
+
+.nav-link,
+.hire-us {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.top-nav {
+  margin: 51px 135px 85px 143px;
+}
+
+.top-nav {
+  width: 473px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.background {
+  width: 100%;
+  background-color: blue;
+}
+
+.main-title,
+.main-text {
+  color: white;
+}
+
+.main-title {
+  font-size: 64px;
+  line-height: 150%;
+  margin-left: 325px;
+  margin-top: 0;
+}
+
+.rotate-socials {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 416px;
+  height: 19px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 144px;
+}
+
+.rotate-socials .social-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #253757;
+  font-size: 12.6px;
+  line-height: 150%;
+  letter-spacing: 2px;
+}
+/*# sourceMappingURL=site.css.map */

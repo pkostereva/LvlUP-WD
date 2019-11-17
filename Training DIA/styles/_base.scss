@@ -1,0 +1,49 @@
+$primary-color: #253757;
+$text-color: #334563;
+$active-color: #56CCF2;
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Muli';
+    margin: 0;
+    color: $primary-color;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.font-900 {
+    font-weight: 900;
+}
+
+.font-800 {
+    font-weight: 800;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.column-container {
+    @extend .flex-container;
+    flex-direction: column;
+}
+
+.flex-vertical-center {
+    @extend .flex-container;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
