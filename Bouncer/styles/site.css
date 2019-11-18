@@ -167,7 +167,7 @@ body {
 }
 
 .best-seller {
-  margin-top: 98px;
+  padding-top: 98px;
   margin-bottom: 42px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -188,14 +188,12 @@ body {
   text-transform: none;
 }
 
-.best-seller .menu-sellers .sellers.active, .best-seller .menu-sellers .sellers:hover {
+.best-seller .menu-sellers .sellers.active {
   border-bottom: 3px solid #33A0FF;
 }
 
 .card-grid {
-  grid-gap: 30px;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  gap: 30px;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -296,18 +294,27 @@ body {
   height: 46px;
   width: 46px;
   border-radius: 50%;
-  border: 2px solid #33A0FF;
+  border: 2px solid rgba(51, 160, 255, 0.25);
+  position: relative;
 }
 
-.good-controls button img {
-  text-align: center;
+.good-controls button .like-img {
+  position: absolute;
+  top: 15px;
+  left: 13px;
+}
+
+.good-controls button .add-img {
+  position: absolute;
+  top: 14px;
+  left: 13px;
 }
 
 .good-controls .like {
   margin-right: 10px;
 }
 
-.good-image-container:hover .good-controls {
+.card-container:hover .good-controls {
   z-index: 0;
 }
 
@@ -324,6 +331,7 @@ body {
   border: none;
   border-bottom: 3px solid #33A0FF;
   color: #33A0FF;
+  cursor: pointer;
 }
 
 @font-face {
@@ -410,9 +418,13 @@ body {
           align-items: center;
 }
 
-.social-links {
+footer {
   height: 552px;
-  margin-top: 141px;
+  padding-top: 141px;
+}
+
+.social-links {
+  margin-bottom: 37px;
   border-top: 2px solid #f6f7f8;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -422,7 +434,6 @@ body {
 .footer-title {
   font-size: 18px;
   margin-top: 0;
-  margin-bottom: 15px;
 }
 
 .text {
@@ -432,12 +443,12 @@ body {
 }
 
 .follow-contact-container {
-  height: 240px;
+  padding-top: 56px;
+  padding-bottom: 39px;
   width: 100%;
 }
 
 .first-column-container {
-  padding-top: 56px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -452,10 +463,12 @@ body {
   margin-right: 130px;
 }
 
-.second-column-container,
-.third-column-container {
-  margin-top: 67px;
-  margin-bottom: 26px;
+.second-column-container .footer-title,
+.third-column-container .footer-title {
+  line-height: 18px;
+  padding-top: 9px;
+  padding-bottom: 30px;
+  margin-bottom: 0;
 }
 
 .second-column-container .text {
@@ -485,6 +498,7 @@ body {
   font-size: 14px;
   text-decoration: none;
   line-height: 30px;
+  color: #26262A;
 }
 
 .rights-payment {
