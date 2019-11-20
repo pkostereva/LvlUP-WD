@@ -24,10 +24,11 @@
     //     threeNumbers[i] = parseInt(prompt('Введите число', 100), 10);
     //     i++;
     // }
-    // let sum = threeNumbers.reduce((x, y) => x + y);
-    // let mul = threeNumbers.reduce((x, y) => x * y);
-
-    // result = Math.max(sum, mul) + 3;
+    // if sum > mul {
+    //     result = sum + 3;
+    // } else {
+    //     result = mul + 3;
+    // }
 
     // console.log(result);
 
@@ -66,30 +67,36 @@
     // for (i = 0; i < 10; i++) {
     //     randomArray.push(Math.round(Math.random() * 100));
     // }
-
-    // const getMaxOfArray = (numArray) => {
-    //         return Math.max.apply(null, numArray);
+    // let min = randomArray[0];
+    // let minIndex = 0;
+    // let max = randomArray[0];
+    // let maxIndex = 0;
+    // for (i = 1; i < randomArray.length; i++) {
+    //     if (min > randomArray[i]) {
+    //         min = randomArray[i];
+    //         minIndex = i;
     //     }
-    //     // поиск минимального и его индекса
-    // let minValue = Math.min(...randomArray);
-    // let minIndex = randomArray.indexOf(minValue);
-    // // поиск максимального и его индекса
-    // console.log(
-    //     randomArray +
-    //     '\n' +
-    //     getMaxOfArray(randomArray), randomArray.indexOf(getMaxOfArray(randomArray)), "максимальное и его индекс" +
-    //     '\n' + minValue, minIndex, "минимальное и его индекс"
-    // );
+    //     if (max < randomArray[i]) {
+    //         max = randomArray[i];
+    //         maxIndex = i;
+    //     }
+    // }
+    // console.log(randomArray + ' - исходный массив,' + '\n' +
+    //     min + ' - минимальное значение,' +
+    //     minIndex + ' - индекс минимального значения' + '\n' +
+    //     max + ' - максимальное значение,' +
+    //     maxIndex + ' - индекс максимального значения');
+
 
     // 5) Посчитать сумму элементов массива с нечетными индексами
-    let randomArray = [];
-    let sum = 0;
+    // let randomArray = [];
+    // let sum = 0;
 
-    for (i = 0; i < 10; i++) {
-        randomArray.push(Math.round(Math.random() * 100));
-        if (i % 2 === 1) {
-            sum += randomArray[i];
-        }
-    }
-    //  вывод массива и суммы
-    console.log(randomArray, sum, "массив и сумма элементов с нечетными индексами");
+    // for (i = 0; i < 10; i++) {
+    //     randomArray.push(Math.round(Math.random() * 100));
+    //     if (i % 2 === 1) {
+    //         sum += randomArray[i];
+    //     }
+    // }
+    // //  вывод массива и суммы
+    // console.log(randomArray, sum, "массив и сумма элементов с нечетными индексами");
