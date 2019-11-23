@@ -17,20 +17,29 @@
 
     //      2) Посчитать выражение: макс(а*б*с, а+б+с) + 3
 
-    // let threeNumbers = [];
-    // let i = 0;
+    let threeNumbers = [];
+    let i = 0;
 
-    // while (threeNumbers.length < 3) {
-    //     threeNumbers[i] = parseInt(prompt('Введите число', 100), 10);
-    //     i++;
-    // }
-    // if sum > mul {
-    //     result = sum + 3;
-    // } else {
-    //     result = mul + 3;
-    // }
+    while (threeNumbers.length < 3) {
+        threeNumbers[i] = parseInt(prompt('Введите число', 100), 10);
+        i++;
+    }
+    let sum = threeNumbers[0];
+    let mul = threeNumbers[0];
+    for (i = 1; i < threeNumbers.length; i++) {
+        sum += threeNumbers[i];
+        mul *= threeNumbers[i];
+    }
+    // let sum = threeNumbers[0] + threeNumbers[1] + threeNumbers[2];
+    // let mul = threeNumbers[0] * threeNumbers[1] * threeNumbers[2];
 
-    // console.log(result);
+    if (sum >= mul) {
+        result = sum + 3;
+    } else {
+        result = mul + 3;
+    }
+
+    console.log(result);
 
 
 
