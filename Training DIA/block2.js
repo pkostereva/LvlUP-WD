@@ -12,9 +12,7 @@ function task1(start, end) {
             counter++;
         }
     }
-
     console.log(sum, counter);
-
 }
 
 
@@ -39,14 +37,14 @@ function task7(number) {
 
 // 7.5 Найти корень натурального числа с точностью до целого (рассмотреть вариант последовательного подбора и метод бинарного поиска)
 
-task7p5();
+task7p5(14);
 
 // вариант последовательного перебора
 
-function roundSqrt(a) {
+function indexOfLowest(arr) {
     var lowest = 0;
-    for (var i = 1; i < a.length; i++) {
-        if (a[i] < a[lowest])
+    for (var i = 1; i < arr.length; i++) {
+        if (arr[i] < arr[lowest])
             lowest = i;
     }
     return lowest;
@@ -56,16 +54,13 @@ function task7p5(number) {
     const sqrt = Math.sqrt(number);
     console.log(sqrt);
     let arr = [];
-    let arr2 = [];
     for (let i = 0; i <= number; i++) {
-        arr[i] = i;
-        arr2[i] = Math.abs(arr[i] - sqrt);
+        arr[i] = Math.abs(i - sqrt);
     }
-    console.log(arr2);
-    console.log(roundSqrt(arr2));
+    console.log(indexOfLowest(arr));
 }
 
-// Вариант с методом бинарного поиска
+// Вариант с методом бинарного поискаы
 
 function _sqrt(number, left, right) {
     let mid = (left + right) / 2;
