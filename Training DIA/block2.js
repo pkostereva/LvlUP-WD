@@ -1,8 +1,8 @@
 // 6. Найти сумму четных чисел и их количество в диапазоне от 1 до 99 
 
-task6(1, 200);
+task6(1, 99);
 
-function task1(start, end) {
+function task6(start, end) {
 
     let sum = 0;
     let counter = 0;
@@ -12,9 +12,8 @@ function task1(start, end) {
             counter++;
         }
     }
-    console.log(sum, counter);
+    console.log('Сумма четных чисел: ' + sum + '\n' + 'Количество четных чисел на промежутке: ' + counter);
 }
-
 
 // 7. Проверить простое ли число? (число называется простым, если оно делится только само на себя и на 1)
 
@@ -37,30 +36,26 @@ function task7(number) {
 
 // 7.5 Найти корень натурального числа с точностью до целого (рассмотреть вариант последовательного подбора и метод бинарного поиска)
 
-task7p5(14);
 
 // вариант последовательного перебора
 
-function indexOfLowest(arr) {
-    var lowest = 0;
-    for (var i = 1; i < arr.length; i++) {
-        if (arr[i] < arr[lowest])
-            lowest = i;
-    }
-    return lowest;
-}
-
-function task7p5(number) {
+function linearSearch(number) {
     const sqrt = Math.sqrt(number);
-    console.log(sqrt);
-    let arr = [];
-    for (let i = 0; i <= number; i++) {
-        arr[i] = Math.abs(i - sqrt);
+    console.log('Корень числа: ' + sqrt);
+    let i = 0;
+    while (i * i <= number) {
+        i++;
     }
-    console.log(indexOfLowest(arr));
-}
+    if (Math.abs(i - sqrt) < Math.abs(i - 1 - sqrt)) {
+        console.log('Корень числа, округленный до целого: ' + i);
+    } else {
+        console.log('Корень числа, округленный до целого: ' + (i - 1));
+    }
 
-// Вариант с методом бинарного поискаы
+}
+console.log(linearSearch(8));
+
+// Вариант с методом бинарного поиска
 
 function _sqrt(number, left, right) {
     let mid = (left + right) / 2;
@@ -75,21 +70,19 @@ function _sqrt(number, left, right) {
     } else {
         left = mid;
     }
-
     return _sqrt(number, left, right);
 }
-
+// проверка на положительность
 function sqrt(number) {
     if (number < 0) return -1;
-
     return _sqrt(number, 0, number);
 }
 
-console.log(sqrt());
+console.log('Корень числа, округленный до целого:' + sqrt(6, 0, 6));
 
 // 8. Вычислить факториал числа n
 
-task8(4);
+console.log('Факториал числа: ' + task8(4));
 
 function task8(number) {
     if (number === 1) {
@@ -102,7 +95,7 @@ function task8(number) {
 
 // 9. Посчитать сумму цифр заданного числа
 
-console.log(task(9));
+console.log('Сумма цифр: ' + task9(11111));
 
 function task9(number) {
     let result = 0;
@@ -112,6 +105,7 @@ function task9(number) {
     }
     return result;
 }
+
 
 // 10. Вывести число, которое является зеркальным отображением 
 //     последовательности цифр заданного числа, например, 
