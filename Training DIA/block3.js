@@ -41,7 +41,7 @@ console.log(task12(randomArr(5)));
 
 function task13(straightArr) {
     console.log(straightArr);
-    let part = straightArr.length / 2;
+    let part = Math.round(straightArr.length / 2);
     let result = [];
 
     for (let i = part; i < straightArr.length; i++) {
@@ -95,6 +95,7 @@ function selectSortTask15(arr) {
 };
 
 console.log(selectSortTask15(randomArr(10)));
+
 
 // Insert sort 
 
