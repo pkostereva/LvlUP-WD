@@ -1,0 +1,27 @@
+@import 'base';
+.testimonials-container {
+    height: 886px;
+    background: url('../img/testimonials-bg.svg') no-repeat;
+    padding-top: 165px;
+}
+
+.menu-point-container {
+    padding-left: 227px;
+}
+
+.testimonials-cards-container {
+    margin: 86px 251px 38px;
+    justify-content: space-between;
+    .card {
+        // background: #FEFEFE;
+        background: peachpuff;
+        box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.05);
+        width: 314px;
+        height: 464px;
+        .card-photo {
+            background: url(hust-wilson-401560.jpg), linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #56CCF2;
+            border-radius: 500px;
+            transform: matrix(0.42, 0.91, 0.91, -0.42, 0, 0);
+        }
+    }
+}

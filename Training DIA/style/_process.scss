@@ -1,0 +1,167 @@
+@import 'base';
+.process-header {
+    margin: 160px 187px 291px 163px;
+    width: 362px;
+    .column-container {
+        height: 168px;
+        align-content: space-between;
+         :nth-child(1) {
+            margin-top: 0;
+        }
+    }
+}
+
+.title-of-point {
+    font-size: 32px;
+    line-height: 140%;
+    margin-top: 19px;
+    margin-bottom: 64px;
+    color: $dark-color;
+}
+
+.steps-container {
+    width: 538px;
+    height: 752px;
+    margin-top: 224px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 58px;
+    .first-column {
+        margin-top: 112px;
+        height: 640px;
+        justify-content: space-between;
+        .card {
+            width: 240px;
+            height: 256px;
+            box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
+            background: white;
+            align-items: center;
+            position: relative;
+        }
+        .card::before {
+            position: absolute;
+            top: 120px;
+            left: -90px;
+            width: 422px;
+            height: 16px;
+            content: "";
+            transform: rotate(-65deg);
+            z-index: -1;
+            border-radius: 500px;
+            // transform: rotate(-65deg);
+        }
+        .first-card::before {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #56CCF2;
+        }
+        .third-card::before {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #03D542;
+        }
+    }
+    .second-column {
+        margin-top: 1px;
+        height: 640px;
+        justify-content: space-between;
+        .card {
+            width: 240px;
+            height: 256px;
+            box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
+            background: white;
+            align-items: center;
+            position: relative;
+        }
+        .card::before {
+            position: absolute;
+            top: 120px;
+            left: -90px;
+            width: 422px;
+            height: 16px;
+            content: "";
+            transform: rotate(-65deg);
+            z-index: -1;
+            border-radius: 500px;
+            // transform: rotate(-65deg);
+        }
+        .second-card::before {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #FCC304;
+        }
+        .fourth-card::before {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #F25656;
+        }
+    }
+    .card-number {
+        margin-top: 64px;
+        margin-bottom: 4px;
+        font-size: 40px;
+        line-height: 150%;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+    }
+    .card-text {
+        margin: 0;
+        text-align: center;
+        font-size: 13px;
+        line-height: 150%;
+        width: 178px;
+    }
+    .first-number {
+        color: #56CCF2;
+    }
+    .second-number {
+        color: #FCC304;
+    }
+    .third-number {
+        color: #03D542;
+    }
+    .fourth-number {
+        color: #F25656;
+    }
+    .first-number::before {
+        position: absolute;
+        content: "";
+        left: -12px;
+        bottom: 28px;
+        background: #56CCF2;
+        opacity: 0.1;
+        width: 48px;
+        height: 48px;
+        z-index: 1;
+        border-radius: 50%;
+    }
+    .second-number::before {
+        position: absolute;
+        content: "";
+        left: -12px;
+        bottom: 28px;
+        background: #FCC304;
+        opacity: 0.1;
+        width: 48px;
+        height: 48px;
+        z-index: 1;
+        border-radius: 50%;
+    }
+    .third-number::before {
+        position: absolute;
+        content: "";
+        left: -12px;
+        bottom: 28px;
+        background: #03D542;
+        opacity: 0.1;
+        width: 48px;
+        height: 48px;
+        z-index: 1;
+        border-radius: 50%;
+    }
+    .fourth-number::before {
+        position: absolute;
+        content: "";
+        left: -12px;
+        bottom: 28px;
+        background: #F25656;
+        opacity: 0.1;
+        width: 48px;
+        height: 48px;
+        z-index: 1;
+        border-radius: 50%;
+    }
+}
