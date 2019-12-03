@@ -1,0 +1,66 @@
+@import 'base';
+.contacts-container {
+    width: 1146px;
+    height: 644px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.form-container {
+    width: 656px;
+    margin-right: 128px;
+}
+
+.contact-us-container {
+    width: 362px;
+    align-items: flex-start;
+    .menu-point-container {
+        padding-left: 0;
+    }
+}
+
+.contact-container {
+    margin-top: 43px;
+    .title {
+        font-size: 13px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #334563;
+    }
+    .contact {
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #56CCF2;
+        width: 260px;
+    }
+}
+
+.social-icons-container {
+    width: 192px;
+    margin-top: 51px;
+    justify-content: space-between;
+}
+
+.footer {
+    width: 1145px;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 65px;
+}
+
+.footer>nav {
+    width: 558px;
+    justify-content: space-between;
+}
+
+.footer-nav-link {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 150%;
+    color: #253757;
+}
