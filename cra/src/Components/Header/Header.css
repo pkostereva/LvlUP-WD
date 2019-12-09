@@ -1,0 +1,125 @@
+header,
+section,
+footer {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 calc(50vw - (1170px + 17px) / 2);
+}
+
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 216px;
+}
+
+.top-gadgets {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.topbar {
+    width: 1170px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #FAFAFB;
+}
+
+.topbar .controls-left,
+.topbar .controls-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 47px;
+}
+
+.topbar .cart-controls {
+    display: inherit;
+}
+
+.topbar .lang {
+    margin-right: 20px;
+}
+
+.topbar .profile-link,
+.topbar .cart-link {
+    display: inherit;
+    font-weight: 600;
+}
+
+.profile-link,
+.cart-link {
+    font-size: 14px;
+    text-decoration: none;
+    color: #26262A;
+    margin-right: 41px;
+}
+
+.profile-link>img,
+.cart-link>img {
+    margin-right: 10px;
+}
+
+.cart-controls {
+    margin-right: 58px;
+}
+
+.cart-link {
+    margin-right: 0;
+}
+
+.cart-total {
+    opacity: .5;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.nav-link {
+    font-weight: 600;
+    text-decoration: none;
+    color: #26262A;
+    font-size: 14px;
+}
+
+.nav_main {
+    width: 660px;
+    text-transform: uppercase;
+}
+
+.nav_main .active {
+    color: #33A0FF;
+}
+
+.logo {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: 41px auto 36px auto;
+}
