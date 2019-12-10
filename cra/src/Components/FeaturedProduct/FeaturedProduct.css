@@ -1,0 +1,61 @@
+.featured-products {
+    margin-top: 141px;
+}
+
+.featured-products h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.featured-products .products {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.featured-products .featured-product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 320px;
+    height: 155px;
+}
+
+.featured-products .featured-product .product-photo {
+    width: 158px;
+    height: 158px;
+}
+
+.featured-products .featured-product .product-description .products-rating .star {
+    color: #C1C8CE;
+}
+
+.featured-products .featured-product .product-description .products-rating .star::before {
+    content: '\2605';
+}
+
+.featured-products .featured-product .product-description .products-rating .star.active {
+    color: #FFC600;
+}
+
+.featured-products .featured-product .product-description .products-title {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.featured-products .featured-product .product-description .price {
+    color: #FF4858;
+    margin-top: 12px;
+}
+
+.featured-products .featured-product .product-description .price::after {
+    content: '$599';
+    color: #C1C8CE;
+    text-decoration: line-through;
+    margin-left: 10px;
+}

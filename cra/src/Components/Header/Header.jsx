@@ -2,6 +2,8 @@ import React from 'react';
 import './Header.css';
 import SearchLogo from './search-icon.svg';
 import Logo from './../../img/logo.svg';
+import Profile from '../../img/profile_close_2.svg';
+import Bag from '../../img/bag_3.svg';
 
 function Header() {
   return (
@@ -13,12 +15,12 @@ function Header() {
             </div>
             <div className="controls-right">
                 <a href="#" className="profile-link">
-                    <img src="../../img/profile_close_2.svg" />
+                    <img src={Profile} />
                     <span>My profile</span>
                 </a>
                 <div className="cart-controls">
                     <a href="#" className="cart-link">
-                        <img src="../../img/bag_3.svg" />
+                        <img src={Bag} />
                         <span>0 Items</span>
                     </a>
                     <span className="cart-total">$0.00</span>

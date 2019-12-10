@@ -1,0 +1,174 @@
+.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.nav-link {
+    font-weight: 600;
+    text-decoration: none;
+    color: #26262A;
+    font-size: 14px;
+}
+
+.nav_bestseller {
+    width: 478px;
+    margin-bottom: 16px;
+}
+
+.nav_bestseller .active {
+    color: #33A0FF;
+    border-bottom: 3px solid #33A0FF;
+}
+
+.product-card {
+    width: 270px;
+    padding: 38px 0 30px 0;
+    height: 348px;
+    border: 4px solid #F6F7F8;
+    text-align: center;
+    position: relative;
+}
+
+.product-card .hot-icon {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 40px;
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #FF4858;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.product-card .product-image {
+    width: 256px;
+    height: 153px;
+}
+
+.product-card .product-controls {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    top: 38px;
+    right: 0;
+    bottom: 146px;
+    left: 0;
+}
+
+.product-card .product-controls .like,
+.product-card .product-controls .add-to-cart {
+    width: 46px;
+    height: 46px;
+    border: 2px solid rgba(51, 160, 255, 0.3);
+    border-radius: 50%;
+    margin: 5px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.product-card .product-controls .like {
+    background-image: url("../../img/hearts.svg");
+}
+
+.product-card .product-controls .add-to-cart {
+    background-image: url("../../img/add-to-cart.svg");
+}
+
+.product-card .product-title {
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.product-price {
+    color: #FF4858;
+    margin-top: 12px;
+}
+
+.product-price .old-price {
+    display: inline;
+    color: #C1C8CE;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.product-card:hover {
+    cursor: pointer;
+    /* это можно использовать для ВСЕХ карточек */
+}
+
+.product-card:hover .product-controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    opacity: 0.9;
+}
+
+.product-rating {
+    margin-top: 29px;
+}
+
+.product-rating .star {
+    color: #C1C8CE;
+}
+
+.product-rating .star::before {
+    content: '\2605';
+}
+
+.product-rating .star.active {
+    color: #FFC600;
+}
+
+.bestseller {
+    margin-top: 100px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.products {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 270px 270px 270px 270px;
+    grid-template-columns: 270px 270px 270px 270px;
+    /* sass компилятор не понимает repeat() */
+    grid-gap: 30px;
+}
+
+.load-link {
+    display: block;
+    text-align: center;
+    margin: 80px auto 0 auto;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    line-height: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #33A0FF;
+    border-bottom: 3px solid #33A0FF;
+}

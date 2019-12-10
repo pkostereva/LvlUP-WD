@@ -1,0 +1,86 @@
+.offer-card {
+    width: 390px;
+    height: 280px;
+    background-color: #F6F7F8;
+    color: #26262A;
+    text-decoration: none;
+    padding-top: 36px;
+    padding-left: 30px;
+    position: relative;
+    margin-top: -55px;
+}
+
+.offer-card:first-child {
+    background-color: #FF6875;
+    color: white;
+}
+
+.offer-card:first-child .card-text {
+    width: 220px;
+}
+
+.offer-card:first-child .card-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.offer-card:first-child .price {
+    color: #FFFFFF;
+    opacity: .75;
+}
+
+.offer-card:nth-child(2) {
+    position: relative;
+}
+
+.offer-card:nth-child(2) .card-title {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.offer-card:nth-child(2) .card-image {
+    margin-top: -80px;
+}
+
+.offer-card:nth-child(2) .price {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    color: #22262A;
+}
+
+.offer-card:last-child {
+    background-color: #C1C8CE;
+}
+
+.offer-card:last-child .card-text {
+    width: 160px;
+}
+
+.offer-card:last-child .card-image {
+    position: absolute;
+    right: -20px;
+    bottom: 20px;
+}
+
+.offer-card:last-child .price {
+    opacity: .75;
+    color: #22262A;
+}
+
+.offer-card .card-title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.offer-card .card-text {
+    font-size: 12px;
+    line-height: 20px;
+    margin: 20px 0;
+}
+
+.offer-card .price {
+    font-size: 24px;
+}

@@ -1,0 +1,43 @@
+.main-offer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 600px;
+    margin-top: 150px;
+    background-color: #2E90E5;
+}
+
+.main-offer .offer-description {
+    width: 395px;
+    padding-top: 161px;
+    margin-left: 70px;
+    color: white;
+}
+
+.main-offer .offer-title {
+    font-size: 66px;
+    font-weight: 300;
+}
+
+.main-offer .offer-text {
+    margin: 40px 0;
+    line-height: 22px;
+    font-size: 24px;
+}
+
+.main-offer .offer-image {
+    margin-top: -109px;
+    margin-right: -40px;
+    height: 709px;
+}
+
+.main-offer .offer-link {
+    text-decoration: none;
+    line-height: 22px;
+    font-size: 14px;
+    color: white;
+    border-bottom: 3px solid white;
+}
