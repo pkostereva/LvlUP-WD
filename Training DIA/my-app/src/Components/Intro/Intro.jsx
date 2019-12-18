@@ -5,16 +5,7 @@ import mainpic from "../../img/main-pic.svg";
 function Intro() {
   return (
     <>
-      <div className="main-block central-layout">
-        <h1 className="main-title font-900">Global digital agency</h1>
-        <p className="main-text">
-          By the same illusion which lifts the horizon of the sea to the level
-          of the spectator on a hillside, the sable cloud beneath.
-        </p>
-        <button type="button" className="learn-more">
-          Learn more
-        </button>
-      </div>
+      
       <div className="central-layout flex-container main-picture-and-socials ">
         <div className="nav-button"></div>
         <img src={mainpic} className="main-pic" alt="main-pic" />
