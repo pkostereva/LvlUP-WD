@@ -1,11 +1,12 @@
-@import 'base';
+@import '../../App.scss';
 .results-container {
-    width: 1451px;
+    // width: 1451px;
     height: 547px;
-    margin-left: 83px;
+    margin-top: 148px;
     padding-top: 122px;
-    background: url('../img/resuls-block.svg');
+    background: url('../../img/resuls-block.svg');
     align-items: center;
+    margin-bottom: 114px;
 }
 
 .results-text {

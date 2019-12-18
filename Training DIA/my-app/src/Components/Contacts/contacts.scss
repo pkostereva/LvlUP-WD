@@ -1,5 +1,5 @@
-@import 'base';
-@import 'results';
+@import '../../App.scss';
+@import '../Results/results.scss';
 .contacts-container {
     width: 1146px;
     height: 644px;
@@ -45,25 +45,6 @@
     width: 192px;
     margin-top: 51px;
     justify-content: space-between;
-}
-
-.footer {
-    width: 1145px;
-    justify-content: space-between;
-    margin: auto;
-    margin-bottom: 65px;
-}
-
-.footer>nav {
-    width: 558px;
-    justify-content: space-between;
-}
-
-.footer-nav-link {
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 150%;
-    color: #253757;
 }
 
 .form-row {

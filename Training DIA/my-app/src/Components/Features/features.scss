@@ -1,22 +1,24 @@
-@import 'base';
+@import '../../App.scss';
 .features-container {
     margin-top: 150px;
-    padding-top: 198px;
-    padding-left: 227px;
-    background: url('../img/features-bg.svg') no-repeat;
+    background: url('../../img/features-bg.svg') no-repeat;
+    background-size: cover;
     height: 976px;
     .point {
         color: white;
     }
     .icon {
-        background-image: url('../img/Menu-icon-white.svg');
+        background-image: url('../../img/Menu-icon-white.svg');
+    }
+    .title-of-point {
+        margin-top: 19px;
+        margin-bottom: 69px;
+        width: 362px;
     }
 }
 
-.title-of-point {
-    margin-top: 19px;
-    margin-bottom: 69px;
-    width: 362px;
+.feature-column {
+    padding-top: 160px;
 }
 
 .first-feature-icon,
@@ -35,7 +37,7 @@
     width: 24px;
     height: 24px;
     position: absolute;
-    background: url('../img/announcement\ speaker.svg');
+    background: url('../../img/announcement\ speaker.svg');
     content: '';
     z-index: 1;
     top: 20px;
@@ -46,7 +48,7 @@
     width: 24px;
     height: 24px;
     position: absolute;
-    background: url('../img/calendar.svg');
+    background: url('../../img/calendar.svg');
     content: '';
     z-index: 1;
     top: 20px;
@@ -57,7 +59,7 @@
     width: 24px;
     height: 24px;
     position: absolute;
-    background: url('../img/file-text.svg');
+    background: url('../../img/file-text.svg');
     content: '';
     z-index: 1;
     top: 20px;

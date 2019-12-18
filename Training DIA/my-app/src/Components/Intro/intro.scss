@@ -1,0 +1,97 @@
+@import '../../App.scss';
+.intro {
+    color: $main-color;
+}
+
+.main-block {
+    padding-left: 195px;
+    padding-right: 195px;
+    // padding-bottom: 90px;
+}
+
+h1 {
+    margin: 0;
+    margin-top: 85px;
+    font-size: 64px;
+    line-height: 150%;
+}
+
+.main-text {
+    margin: 0;
+    margin-top: 22px;
+    width: 754px;
+    font-size: 24px;
+    line-height: 150%;
+    // font-weight: 200;
+}
+
+.learn-more {
+    width: 226px;
+    height: 56px;
+    margin-top: 42px;
+    background: #FFFFFF;
+    border-radius: 64px;
+    font-size: 16px;
+    color: $dark-color;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 150%;
+    border: none;
+    font-family: Muli, serif;
+    font-weight: 600;
+    margin-bottom: 93px;
+}
+
+.main-picture-and-socials {
+    // margin-top: 90px;
+    // justify-content: center;
+    position: relative;
+    .social-links-container {
+        height: 19px;
+        width: 416px;
+        justify-content: space-between;
+        transform: rotate(90deg);
+        position: absolute;
+        top: 50%;
+        right: -20%;
+        .social-link {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $dark-color;
+            font-size: 13px;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+.point-and-text-container {
+    align-items: flex-start;
+    position: absolute;
+    top: 515px;
+    left: 59px;
+    .text-point {
+        font-size: 20px;
+        line-height: 140%;
+        width: 264px;
+        margin: 0;
+    }
+}
+
+.point {
+    margin: 0;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: 2px;
+    color: $points-color;
+}
+
+.nav-button {
+    width: 162px;
+    height: 64px;
+    border: none;
+    border-radius: 50px;
+    background-image: url('../../img/Slider.svg');
+    position: absolute;
+    top: 254px;
+    left: -81px;
+}

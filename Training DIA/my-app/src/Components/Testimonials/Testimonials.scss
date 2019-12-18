@@ -1,25 +1,29 @@
-@import 'base';
+@import '../../App.scss';
 .testimonials-container {
     height: 886px;
     width: 100%;
-    background: url('../img/testimonials-bg.svg') no-repeat;
+    background: url('../../img/testimonials-bg.svg') no-repeat;
+    background-size: cover;
     padding-top: 165px;
+    padding-bottom: 148px;
 }
 
-.menu-point-container {
-    padding-left: 227px;
+.menu-point-container>.title-of-point {
+    width: 362px;
 }
 
 .testimonials-cards-container {
     width: 100%;
-    padding: 86px 251px 38px;
+    padding: 86px 0px 38px;
     justify-content: space-between;
     .card {
+        padding-top: 14px;
         align-items: center;
         background: #FEFEFE;
         box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.05);
         width: 314px;
         height: 464px;
+        border-radius: 10px;
         .card-photo {
             margin: auto;
             margin-top: 30px;
@@ -29,9 +33,9 @@
             border-radius: 500px;
         }
     }
-    .first-card {
+    .card-1 {
         .card-photo {
-            background-image: url(../img/photo-1.1.svg);
+            background-image: url(../../img/photo-1.1.svg);
         }
         .hr {
             background-color: #56CCF2;
@@ -40,9 +44,9 @@
             color: #56CCF2;
         }
     }
-    .second-card {
+    .card-2 {
         .card-photo {
-            background-image: url(../img/photo-2.1.svg);
+            background-image: url(../../img/photo-2.1.svg);
         }
         .hr {
             background-color: #FCC304;
@@ -51,9 +55,9 @@
             color: #FCC304;
         }
     }
-    .third-card {
+    .card-3 {
         .card-photo {
-            background-image: url(../img/photo-3.1.svg);
+            background-image: url(../../img/photo-3.1.svg);
         }
         .hr {
             background-color: #F25656;
