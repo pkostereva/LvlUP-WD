@@ -2,24 +2,26 @@ import React, { Component } from "react";
 import "./Testimonials.scss";
 
 class Testimonials extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      testm: []
+    };
+  }
+
+  componentWillMount() {
+    fetch("/api/getTestimotionals")
+      .then(response => response.json())
+      .then(res => {
+        this.setState({ testm: res });
+      });
+  }
+
+
   render() {
-    const data = [
-      {
-        cardTestimonial: "“By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.”(1).",
-        authorName: "John Wayne-1",
-        authorPosition: "CEO-1"
-      },
-      {
-        cardTestimonial: "“By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.”(2).",
-        authorName: "John Wayne-2",
-        authorPosition: "CEO-2"
-      },
-      {
-        cardTestimonial: "“By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.”(3).",
-        authorName: "John Wayne-3",
-        authorPosition: "CEO-3"
-      }
-    ];
+    const { testm } = this.state;
+
     return (
       <section className="column-container testimonials-container">
         <div className="central-layout">
@@ -33,8 +35,8 @@ class Testimonials extends React.Component {
             </p>
           </div>
           <div className="flex-container testimonials-cards-container container">
-            {data.map((el, index) => (
-              <div className={`card-${index + 1} column-container card`}>
+            {testm.map((el, index) => (
+              <div key={index} className={`card-${index + 1} column-container card`}>
                 <div className="card-photo"></div>
                 <p className="card-testimonial">{el.cardTestimonial}</p>
                 <div className="hr"></div>
